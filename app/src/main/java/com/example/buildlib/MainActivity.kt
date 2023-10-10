@@ -13,7 +13,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.buildlib.ui.theme.BuildLibTheme
-import com.example.demolib.ImagePreview
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,11 +20,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             BuildLibTheme {
                 // A surface container using the 'background' color from the theme
-                ImagePreview(image = painterResource(id = R.mipmap.ic_demo),
-                description = "Demo Lib",
-                modifier = Modifier
-                    .fillMaxSize()
-                    .size(150.dp))
+//                ImagePreview(image = painterResource(id = R.mipmap.ic_demo),
+//                description = "Demo Lib",
+//                modifier = Modifier
+//                    .fillMaxSize()
+//                    .size(150.dp))
             }
         }
     }
